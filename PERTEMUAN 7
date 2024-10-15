@@ -1,0 +1,369 @@
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1. Buatlah deret bilangan urut untuk rentang di bawah ini menggunakan perulangan 
+  for, while, dan do-while.
+  a. 1 – 10
+  b. 1 – 100
+  c. 10 – 20
+  d. 50 – 75
+  e. 90 – 115
+
+===============================================================================A. 1-10========================================================================================================================
+#include <stdio.h>
+
+int main() {
+    // Menggunakan for loop
+    for (int i = 1; i <= 10; i++) {
+        printf("%d ", i);
+    }
+    printf("\n");
+
+    // Menggunakan while loop
+    int i = 1;
+    while (i <= 10) {
+        printf("%d ", i);
+        i++;
+    }
+    printf("\n");
+
+    // Menggunakan do-while loop
+    int j = 1;
+    do {
+        printf("%d ", j);
+        j++;
+    } while (j <= 10);
+    printf("\n");
+
+    return 0;
+}
+
+=============================================================================B. 1-100=====================================================================================================
+#include <stdio.h>
+
+int main() {
+    // Menggunakan for loop
+    printf("For loop - Deret 1-100:\n");
+    for (int i = 1; i <= 100; i++) {
+        printf("%d ", i);
+    }
+    printf("\n");
+
+    // Menggunakan while loop
+    printf("While loop - Deret 1-100:\n");
+    int i = 1;
+    while (i <= 100) {
+        printf("%d ", i);
+        i++;
+    }
+    printf("\n");
+
+    // Menggunakan do-while loop
+    printf("Do-while loop - Deret 1-100:\n");
+    int j = 1;
+    do {
+        printf("%d ", j);
+        j++;
+    } while (j <= 100);
+    printf("\n");
+
+    return 0;
+}
+
+================================================================================C. 10-20=================================================================================================
+#include <stdio.h>
+
+int main() {
+    // Menggunakan for loop
+    printf("For loop - Deret 10-20:\n");
+    for (int i = 10; i <= 20; i++) {
+        printf("%d ", i);
+    }
+    printf("\n");
+
+    // Menggunakan while loop
+    printf("While loop - Deret 10-20:\n");
+    int i = 10;
+    while (i <= 20) {
+        printf("%d ", i);
+        i++;
+    }
+    printf("\n");
+
+    // Menggunakan do-while loop
+    printf("Do-while loop - Deret 10-20:\n");
+    int j = 10;
+    do {
+        printf("%d ", j);
+        j++;
+    } while (j <= 20);
+    printf("\n");
+
+    return 0;
+}
+
+=============================================================================D. 50-75=========================================================================================================
+
+#include <stdio.h>
+
+int main() {
+    // Menggunakan for loop
+    printf("For loop - Deret 50-75:\n");
+    for (int i = 50; i <= 75; i++) {
+        printf("%d ", i);
+    }
+    printf("\n");
+
+    // Menggunakan while loop
+    printf("While loop - Deret 50-75:\n");
+    int i = 50;
+    while (i <= 75) {
+        printf("%d ", i);
+        i++;
+    }
+    printf("\n");
+
+    // Menggunakan do-while loop
+    printf("Do-while loop - Deret 50-75:\n");
+    int j = 50;
+    do {
+        printf("%d ", j);
+        j++;
+    } while (j <= 75);
+    printf("\n");
+
+    return 0;
+}
+
+================================================================================E. 90-115========================================================================================================
+
+#include <stdio.h>
+
+int main() {
+    // Menggunakan for loop
+    printf("For loop - Deret 90-115:\n");
+    for (int i = 90; i <= 115; i++) {
+        printf("%d ", i);
+    }
+    printf("\n");
+
+    // Menggunakan while loop
+    printf("While loop - Deret 90-115:\n");
+    int i = 90;
+    while (i <= 115) {
+        printf("%d ", i);
+        i++;
+    }
+    printf("\n");
+
+    // Menggunakan do-while loop
+    printf("Do-while loop - Deret 90-115:\n");
+    int j = 90;
+    do {
+        printf("%d ", j);
+        j++;
+    } while (j <= 115);
+    printf("\n");
+
+    return 0;
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2. Buatlah sebuah program menggunakan perintah peruangan for, while, dan dowhile untuk mencetak deret bilanga ganjil dan genap sekaligus dalam 2 baris 
+  berbeda jika nilai awal dan nilai akhir tidak ditentukan dari program tetapi 
+  diinputkan secara manual dari console (layar cmd).
+
+#include <stdio.h>
+
+int main() {
+    int n;
+
+    // Meminta input dari user
+    printf("Masukkan batas akhir deret (input): ");
+    scanf("%d", &n);
+
+    // Menampilkan bilangan ganjil
+    printf("Bilangan Ganjil:\n");
+    for (int i = 1; i <= 2 * n; i++) {
+        if (i % 2 != 0) {
+            printf("%d ", i);
+        }
+    }
+    printf("\n");
+
+    // Menampilkan bilangan genap
+    printf("Bilangan Genap:\n");
+    for (int i = 1; i <= 2 * n; i++) {
+        if (i % 2 == 0) {
+            printf("%d ", i);
+        }
+    }
+    printf("\n");
+
+    return 0;
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3. Buatlah sebuah program untuk menampilkan keluaran berikut menggunakkan 
+  perintah perulangan for, while, dan do-while.
+  (program bintang)
+
+#include <stdio.h>
+
+int main() {
+    int i, j;
+
+    // POLA A DAN B DENGAN FOR LOOP
+    printf("Pola a & b (for loop):\n");
+
+    // Pola a - Segitiga kiri bawah
+    for (i = 1; i <= 5; i++) { // Loop baris
+        for (j = 1; j <= i; j++) { // Loop kolom
+            printf("* ");
+        }
+        printf("\n");
+    }
+
+    // Pola b - Segitiga kanan bawah
+    for (i = 1; i <= 5; i++) { // Loop baris
+        for (j = 1; j <= 5 - i; j++) { // Spasi di depan
+            printf("  ");
+        }
+        for (j = 1; j <= i; j++) { // Loop kolom bintang
+            printf("* ");
+        }
+        printf("\n");
+    }
+
+    // POLA A DAN B DENGAN WHILE LOOP
+    printf("\nPola a & b (while loop):\n");
+
+    // Pola a - Segitiga kiri bawah
+    i = 1;
+    while (i <= 5) { // Loop baris
+        j = 1;
+        while (j <= i) { // Loop kolom
+            printf("* ");
+            j++;
+        }
+        printf("\n");
+        i++;
+    }
+
+    // Pola b - Segitiga kanan bawah
+    i = 1;
+    while (i <= 5) { // Loop baris
+        j = 1;
+        while (j <= 5 - i) { // Spasi di depan
+            printf("  ");
+            j++;
+        }
+        j = 1;
+        while (j <= i) { // Loop kolom bintang
+            printf("* ");
+            j++;
+        }
+        printf("\n");
+        i++;
+    }
+
+    // POLA A DAN B DENGAN DO-WHILE LOOP
+    printf("\nPola a & b (do-while loop):\n");
+
+    // Pola a - Segitiga kiri bawah
+    i = 1;
+    do {
+        j = 1;
+        do {
+            printf("* ");
+            j++;
+        } while (j <= i); // Loop kolom
+        printf("\n");
+        i++;
+    } while (i <= 5); // Loop baris
+
+    // Pola b - Segitiga kanan bawah
+    i = 1;
+    do {
+        j = 1;
+        do {
+            printf("  "); // Spasi di depan
+            j++;
+        } while (j <= 5 - i);
+        j = 1;
+        do {
+            printf("* ");
+            j++;
+        } while (j <= i); // Loop kolom bintang
+        printf("\n");
+        i++;
+    } while (i <= 5); // Loop baris
+
+    return 0;
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+4. Buatlah sebuah program menggunakan printah for, while, dan do-while untuk 
+  menentukan IPS semester berjalan dari 3 mata kuliah yang diinputkan berulang   
+  secara manual dengan aturan sebagai berikut
+
+#include <stdio.h>
+#include <string.h>
+
+// Fungsi untuk menghitung mutu berdasarkan tabel angka mutu
+double hitungMutu(double nilai) {
+    if (nilai >= 90) return 4.0;
+    else if (nilai >= 80) return 3.7;
+    else if (nilai >= 75) return 3.3;
+    else if (nilai >= 70) return 3.0;
+    else if (nilai >= 65) return 2.7;
+    else if (nilai >= 60) return 2.3;
+    else if (nilai >= 55) return 2.0;
+    else if (nilai >= 50) return 1.7;
+    else if (nilai >= 40) return 1.0;
+    else return 0.0;
+}
+
+int main() {
+    int totalSKS = 0;
+    double totalNilaiMutu = 0;
+    int sks;
+    double nilai, mutu;
+    char kodeMK[10], namaMK[50];
+
+    // Input untuk 3 mata kuliah
+    for (int i = 1; i <= 7; i++) {
+        printf("Mata kuliah ke-%d\n", i);
+        printf("----------------------------\n");
+
+        // Input Kode Mata Kuliah
+        printf("Kode Mata Kuliah: ");
+        scanf("%s", kodeMK);
+
+        // Input Nama Mata Kuliah
+        printf("Nama Mata Kuliah: ");
+        scanf(" %[^\n]", namaMK);  // Menggunakan %[^\n] untuk membaca string dengan spasi
+
+        // Input SKS dan nilai
+        printf("SKS: ");
+        scanf("%d", &sks);
+        printf("Nilai: ");
+        scanf("%lf", &nilai);
+
+        // Menghitung Nilai * Mutu (berdasarkan Tabel Angka Mutu)
+        mutu = hitungMutu(nilai);
+        double nilaiMutu = sks * mutu;
+
+        // Output hasil hitung Nilai x Mutu
+        printf("Nilai x Mutu: %.2lf\n", nilaiMutu);
+        printf("----------------------------\n");
+
+        // Menambahkan SKS dan Nilai Mutu ke total
+        totalSKS += sks;
+        totalNilaiMutu += nilaiMutu;
+    }
+
+    // Menghitung dan menampilkan IPS
+    double IPS = totalNilaiMutu / totalSKS;
+    printf("Indeks Prestasi Semester (IPS): %.2lf\n", IPS);
+
+    return 0;
+}
